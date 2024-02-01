@@ -1,28 +1,222 @@
-<div class="flex">
-    <a href="mailto:kareena22@navgurukul.org" target="_blank"><img src="./gmail.svg" alt="Gmail"></a>
-    <a href="https://github.com/kareena0211" target="_blank"><img src="./github.svg" alt="Github"></a>
-    <a href="https://www.codechef.com/users/kareena0211" target="_blank"><img src="./codechef.svg" alt="codechef"></a>
-    <a href="https://www.linkedin.com/in/kareena-466646261" target="_blank"><img src="./linkedin-in.svg"
-            alt="LinkedIn"></a>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Contact Page</title>
+</head>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        background-color: tan;
+    }
+
+    main {
+        /* border: 2px solid red; */
+        height: 100vh;
+        width: 100%;
+        display: flex;
+    }
+
+    /* .......................... SIDE NAV STYLING  ........................................       */
+
+
+    .side-nav {
+        border-right: 9px solid black;
+        flex-basis: 15%;
+        padding: 2rem;
+    }
+
+    .side-nav>h1 {
+        font-size: 2rem;
+        letter-spacing: 0.62rem;
+    }
+
+    ul {
+        border-top: 9px solid #000;
+        padding: 4rem 1rem 1rem 1rem;
+        text-align: center;
+        font-weight: 500;
+
+    }
+
+    ul>li {
+        list-style: none;
+        font-size: 1.4rem;
+        margin: 20px;
+        background-color: yellow;
+        padding: 1rem;
+    }
+
+    li>a {
+        text-decoration: none;
+        color: black;
+    }
+
+    ul>li:hover {
+        border-left: 5px solid #000;
+        border-right: 5px solid #000;
+        cursor: pointer;
+    }
 
 
 
-.bottom-container {
-border-bottom: solid black;
-display: inline-block;
-width: 15rem;
-height: 4rem;
-}
+    /* ...................................Form Area ....................................... */
 
-.flex img {
-border: 1px solid black;
-padding: 5px;
-border-radius: 5px;
-width: 2.4rem;
-margin-right: 1.46rem;
-}
+    section {
+        border: solid firebrick;
 
-.flex img:hover {
-background-color: #B0B0B0;
-}
+        display: flex;
+        flex-basis: 85%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    h1 {
+
+        font-size: 2.4rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input,
+    textarea {
+        border: none;
+        outline: none;
+        margin-bottom: 1rem;
+        padding: 10px;
+    }
+
+    button {
+        padding: 0.7rem;
+        background-color: black;
+        color: white;
+        /* font-weight: bold; */
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1.2rem;
+        letter-spacing: 0.50rem;
+    }
+
+    button:hover {
+        border-left: 5px solid #000;
+        border-right: 5px solid #000;
+        cursor: pointer;
+    }
+
+
+
+
+    /* ........................................  contact information............................... */
+
+    .form-case {
+        width: 45%;
+        border: 10px solid;
+        padding: 1.5rem;
+    }
+
+    .contact-container {
+        background-color: yellow;
+        padding: 1.5rem;
+        border: 5px solid;
+    }
+
+
+    .contact-info {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .contact-info img {
+        height: 32px;
+    }
+
+    .mail {
+        /* border: solid violet; */
+        width: 2rem;
+    }
+</style>
+
+<body>
+    <!-- ..............  navbar ...................................... -->
+    <main>
+        <aside class="side-nav">
+            <h1>PORTFOLIO</h1>
+            <ul>
+                <li> <a href="./index.html"> Home</a></li>
+                <li> <a href="./about.html"> About</a></li>
+                <li> <a href="./projects.html">Projects</a> </li>
+                <li> <a href="./contact.html">Contact</a></li>
+            </ul>
+        </aside>
+
+
+
+        <section>
+            <h1>CONTACT ME </h1>
+
+            <div class="form-case">
+                <div class="contact-container">
+                    <form action="">
+                        <input type="text" placeholder="Name">
+                        <input type="email" name="" id="" placeholder="Enter Email">
+                        <input type="text" placeholder="Subject">
+                        <textarea name="" id="" cols="40" rows="10" placeholder="Your Message"></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+
+
+
+
+
+                    <!-- .....................................................icons ..................................................... -->
+
+                    <div class="contact-info ">
+                        <a class="contact-link" href="mailto:your@email.com" target="_blank">
+                            <img src="https://i.ibb.co/KVS7nmG/gmail.png" class="mail" alt="Email Icon" />
+                        </a>
+
+                        <a class="contact-link" href="https://www.linkedin.com/in/kareena-466646261/" target="_blank">
+                            <img src="https://i.ibb.co/nk7Ms5K/linkedin-in.png" alt="LinkedIn Icon" />
+                        </a>
+
+                        <a class="contact-link" href="https://www.codechef.com/users/kareena0211" target="_blank">
+                            <img src="https://i.ibb.co/FV3fC5t/codechef.png" alt="CodeChef Icon" />
+                        </a>
+
+                        <a class="contact-link" href="https://github.com/kareena0211" target="_blank">
+                            <img src="https://i.ibb.co/f82gNGY/github.png" alt="GitHub Icon" />
+                        </a>
+
+                        <a href="">
+                            <img src="https://i.ibb.co/vH7yPDM/instagram-256x256.png" alt="instagram">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
