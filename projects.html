@@ -72,10 +72,10 @@
         cursor: pointer;
     }
 
-    /* ...................................................................... */
+    /* .......................................grid container ............................... */
 
     .container {
-        border: solid red;
+        /* border: solid red; */
         flex-basis: 85%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -83,7 +83,7 @@
     }
 
     .items {
-        border: solid black;
+        border: 1px solid black;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -91,28 +91,39 @@
         padding: 1rem;
     }
 
-    .items>img {
-        border: solid firebrick;
-        height: 15rem;
-        width: 100%;
+    .para {
+        /* border: solid red; */
+        padding: 10px;
     }
 
-    button{
+    .items>h2 {
+        padding: 10px;
+    }
+
+    .items>img {
+        /* border: solid firebrick; */
+        height: 10rem;
+        width: 80%;
+        border-radius: 10px;
+    }
+
+    button {
         border: none;
-        margin-top: 18px;
+        margin-top: 20px;
     }
 
     button>a {
         background-color: yellow;
         color: black;
         padding: 1rem;
-        border-radius: 5px;text-decoration: none;
+        border-radius: 5px;
+        text-decoration: none;
         color: black;
         font-weight: bold;
         font-size: 1rem;
     }
 
-    button:hover{
+    button>a:hover {
         border-left: 5px solid #000;
         border-right: 5px solid #000;
         cursor: pointer;
@@ -132,11 +143,20 @@
             </ul>
         </aside>
 
+
+        <!-- .....................projects ............................................ -->
+
         <div class="container">
 
+
             <div class="items">
-                <p>Emoji Explorer</p>
+                <h2>Emoji Explorer</h2>
                 <img src="https://i.ibb.co/MRL7YkL/image-explore.png" alt="Image">
+                <p class="para">Designed and implemented an engaging React-based web application called "Emoji
+                    Explorer." This
+                    interactive project allows users to explore the meanings behind various emojis, adding an element of
+                    fun and curiosity to the online experience.</p>
+
                 <button>
                     <a href="https://t3pvlg.csb.app/"> Know
                         More</a></button>
@@ -144,37 +164,59 @@
 
 
             <div class="items">
-                <p>Fruitful Conversations 🍌</p>
-                <img src="https://i.ibb.co/S685zKd/fruitful-conversation.png" alt="Image"> <button> <a
-                        href="https://kareena0211.github.io/BananaBurst-Buzz/"> Know
+                <h2>Fruitful Conversations 🍌</h2>
+                <img src="https://i.ibb.co/S685zKd/fruitful-conversation.png" alt="Image">
+
+                <p class="para">Introducing BananaBurst Buzz, a whimsical and entertaining web application that brings a
+                    fruity twist to your conversations. This project transforms ordinary text into the amusing Banana
+                    Language, adding a touch of humor to your messages.</p>
+
+                <button> <a href="https://kareena0211.github.io/BananaBurst-Buzz/" target="_blank"> Know
                         More</a></button>
             </div>
 
 
             <div class="items">
-                <p>🔏Login🔏🔏SignUp🔏</p>
+                <h2>🔏Login🔏🔏SignUp🔏</h2>
                 <img src="https://i.ibb.co/GWLdknS/login-sign-up-page.png" alt="Image">
-                <button> <a href="https://bespoke-alpaca-14154e.netlify.app/"> Know More</a></button>
+                <p class="para">
+                    The SignUp page is a sleek and user-friendly React-based component, designed to deliver a modern and
+                    efficient registration experience. Featuring iconic Material-UI icons and responsive input
+                    containers, it provides users with a clear and organized interface</p>
+
+                <button> <a href="https://bespoke-alpaca-14154e.netlify.app/" target="_blank"> Know More</a></button>
             </div>
 
 
             <div class="items">
-                <p>Foddies Blog</p>
-                <img src="https://i.ibb.co/ykr7JxT/foodies-blog.png" alt="Image"> <button> <a
-                        href="https://kareena0211.github.io/Foodies-Blog/"> Know More</a></button>
+                <h2>Foddies Blog</h2>
+                <img src="https://i.ibb.co/ykr7JxT/foodies-blog.png" alt="Image">
+                <p class="para">Immerse yourself in the flavorful world of Foodies, a dynamic website that seamlessly
+                    blends
+                    aesthetics with functionality. Crafted using Bootstrap 5 for responsive design, Font Awesome for
+                    visual appeal</p>
+                <button> <a href="https://kareena0211.github.io/Foodies-Blog/" target="_blank"> Know More</a></button>
             </div>
 
 
             <div class="items">
-                <p>Time-Gap-Analyzer</p>
-                <img src="https://i.ibb.co/T1GR24p/Time-gap-analayz.png" alt="Image"> <button> <a
-                        href="https://kareena0211.github.io/Time-Gap-Analyzer/"> Know
+                <h2>Time-Gap-Analyzer</h2>
+                <img src="https://i.ibb.co/T1GR24p/Time-gap-analayz.png" alt="Image">
+                <p class="para">Time Difference Calculator: A web application that calculates and displays the time
+                    difference
+                    between the current date and a selected date. Utilizes HTML, CSS, and JavaScript to provide a
+                    user-friendly interface for tracking date intervals and countdowns.</p>
+                <button> <a href="https://kareena0211.github.io/Time-Gap-Analyzer/" target="_blank"> Know
                         More</a></button>
             </div>
             <div class="items">
-                <p>Rock-Paper-Scissor</p>
-                <img src="https://i.ibb.co/3ChyF4Q/rock-paper.jpg" alt="Image"> <button> <a
-                        href="https://github.com/kareena0211/Rock-Paper-Scissors"> Know
+                <h2>Rock-Paper-Scissor</h2>
+                <img src="https://i.ibb.co/3ChyF4Q/rock-paper.jpg" alt="Image">
+                <p class="para">I developed a Rock-Paper-Scissors game using Python, showcasing my proficiency in the
+                    language.
+                    Leveraging Python's simplicity and readability, the project implements user-friendly features such
+                    as input validation and real-time feedback on game outcomes. </p>
+                <button> <a href="https://github.com/kareena0211/Rock-Paper-Scissors" target="_blank"> Know
                         More</a></button>
             </div>
         </div>
