@@ -182,7 +182,99 @@
         border-right: 5px solid #000;
         cursor: pointer;
     }
+
+    /* .................... media query .............................. */
+
+
+    @media (min-width:400px) and (max-width:1000px) {
+
+
+        body {
+            background-image: none;
+            background-color: #06b6d4;
+        }
+
+        main {
+            flex-direction: column;
+        }
+
+
+        .right {
+            display: none;
+        }
+
+
+        .side-nav {
+            border-right: 0;
+            border-bottom: 9px solid;
+
+        }
+
+        ul {
+            border: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0;
+        }
+
+        ul>li {
+            /* border: solid red; */
+            margin: 0;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .left {
+            border: solid forestgreen;
+            flex-basis: 100%;
+            width: auto;
+            justify-content: flex-start;
+            margin-top: 100px;
+
+        }
+
+        button {
+            margin-top: 2rem;
+        }
+
+        .cover {
+            /* border: solid violet; */
+            position: absolute;
+            top: 50%;
+            left: 20%;
+        }
+
+
+
+        .background-box {
+            background-color: transparent;
+        }
+
+
+        .outer-box {
+            height: 20rem;
+            width: 60%;
+        }
+
+        .box-right {
+            border: solid rebeccapurple;
+            position: absolute;
+            top: 78%;
+        }
+
+        .box2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+    }
 </style>
+
+
 
 <body>
     <main class="main">

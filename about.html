@@ -94,9 +94,6 @@
         height: 40rem;
     }
 
-    .left>p {
-        padding: 2rem;
-    }
 
     .left>.first {
         color: orange;
@@ -115,6 +112,7 @@
 
     button {
         border: none;
+        margin-top: 5rem;
     }
 
     button>a {
@@ -175,6 +173,101 @@
     .end>img {
         border: 4PX SOLID black;
     }
+
+
+    /* ..........................media query .................................... */
+
+
+
+    @media (min-width:500px) and (max-width:799px) {
+
+
+        body {
+            background-image: url(https://i.ibb.co/52d2K9t/bgc.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            background-color: #0284c7;
+        }
+
+        main {
+            flex-direction: column;
+
+        }
+
+
+        .right {
+            display: none;
+        }
+
+
+        .side-nav {
+            border-right: 0;
+            border-bottom: 9px solid;
+
+        }
+
+        ul {
+            border: none;
+            /* background-color: teal;
+            height: 5rem; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0;
+        }
+
+        ul>li {
+            /* border: solid red; */
+            margin: 0;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .left {
+            border: solid forestgreen;
+            flex-basis: 100%;
+            width: auto;
+            justify-content: flex-start;
+            margin-top: 100px;
+
+        }
+
+        button {
+            margin-top: 2rem;
+        }
+    }
+
+
+    @media (min-width:800px) and (max-width:1300px) {
+
+
+
+        .main-container {
+            padding: 0 4rem 0 4rem;
+            height: 100vh;
+            display: block;
+
+        }
+
+        .left .second {
+            font-size: 1rem;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        button {
+            margin: 50px;
+        }
+
+
+        .right {
+            display: none;
+        }
+
+
+
+    }
 </style>
 
 <body>
@@ -211,6 +304,7 @@
                     exceptional digital solutions! 🌟</p>
                 <button> <a href="./contact.html"> Connect Me</a></button>
             </div>
+
             <div class="right">
 
                 <h2>Language Known</h2>
@@ -235,7 +329,7 @@
                     <div class="items end"> <img src="https://i.ibb.co/Yprtr5p/2874-download-5-jpeg-L.jpg" alt="">
                         <p>Python</p>
                     </div>
-                
+
                 </div>
 
             </div>
