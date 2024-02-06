@@ -178,16 +178,86 @@
     /* ..........................media query .................................... */
 
 
-
-    @media (min-width:500px) and (max-width:799px) {
+    @media (min-width:414px) and (max-width:449px) {
 
 
         body {
             background-image: url(https://i.ibb.co/52d2K9t/bgc.jpg);
             background-size: cover;
             background-repeat: no-repeat;
-            height: 100vh;
+            /* height: 100vh; */
             background-color: #0284c7;
+        }
+
+        main {
+            /* border: solid red; */
+            flex-direction: column;
+
+        }
+
+
+        .right {
+            display: none;
+        }
+
+
+        .side-nav {
+            /* border: solid darkblue; */
+            border-right: 0;
+            /* padding: 0; */
+            padding: 0.90rem;
+            border-bottom: 9px solid;
+
+        }
+
+        ul {
+            border: none;
+            /* background-color: teal;
+    height: 5rem; */
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            /* align-items: center; */
+            padding: 0;
+        }
+
+        ul>li {
+            /* border: solid red; */
+            margin: 0;
+            font-size: 20px;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .left {
+            flex-basis: 100%;
+            /* width: auto; */
+            /* justify-content: flex-start; */
+            margin-top: 100px;
+
+        }
+
+        .first {
+            /* border: solid rebeccapurple; */
+            width: 100%;
+            /* text-align: left; */
+        }
+
+        button {
+            margin-top: 2rem;
+        }
+    }
+
+
+    @media (min-width:450px) and (max-width:799px) {
+
+
+        body {
+            background-image: url(https://i.ibb.co/52d2K9t/bgc.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* height: 100vh; */
+            /* background-color: #0284c7; */
         }
 
         main {
@@ -225,7 +295,6 @@
         }
 
         .left {
-            border: solid forestgreen;
             flex-basis: 100%;
             width: auto;
             justify-content: flex-start;
