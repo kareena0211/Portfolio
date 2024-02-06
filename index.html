@@ -30,7 +30,7 @@
     main {
         /* border: 2px solid red; */
         height: 100vh;
-        width: 100%;
+        /* width: 100%; */
         display: flex;
     }
 
@@ -186,7 +186,110 @@
     /* .................... media query .............................. */
 
 
-    @media (min-width:400px) and (max-width:1000px) {
+
+    @media (min-width:400px) and (max-width:499px) {
+
+
+        body {
+            background-image: none;
+            background-color: #06b6d4;
+        }
+
+        main {
+            flex-direction: column;
+            border: solid rebeccapurple;
+            /* height: 100vh; */
+
+        }
+
+
+        .right {
+            /* display: none; */
+            flex-basis: 100%;
+        }
+
+
+        .side-nav {
+            border-right: 0;
+
+            border-bottom: 9px solid;
+
+        }
+
+        ul {
+            /* border: none; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            padding: 0;
+        }
+
+        ul>li {
+            border: solid red;
+            margin: 0;
+            border-radius: 5px;
+            margin-top: 20px;
+            padding: 6px;
+        }
+
+        .left {
+            /* border: solid forestgreen; */
+            flex-basis: 100%;
+            width: auto;
+            justify-content: flex-start;
+            margin-top: 100px;
+
+        }
+
+        button {
+            margin-top: 2rem;
+        }
+
+        .cover {
+            /* border: solid violet; */
+            position: absolute;
+            top: 50%;
+            left: 20%;
+        }
+
+
+
+        .background-box {
+            background-color: transparent;
+        }
+
+
+        .outer-box {
+            /* border: solid firebrick; */
+            margin-right: 10%;
+            height: 20rem;
+            width: 60%;
+        }
+
+        .box-right {
+            border: solid red;
+            position: absolute;
+            top: 78%;
+            text-align: left;
+            /* display: flex; */
+        }
+
+        .box2 {
+            border: solid firebrick;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: center; */
+            width: 100%;
+        }
+
+    }
+
+
+
+
+    @media (min-width:500px) and (max-width:1000px) {
 
 
         body {
