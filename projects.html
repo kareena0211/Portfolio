@@ -107,7 +107,7 @@
 
     .items:hover {
         transform: scale(1.02);
-        border: 2px solid yellow;
+        /* border: 2px solid yellow; */
     }
 
 
@@ -152,7 +152,197 @@
         border-right: 5px solid #000;
         cursor: pointer;
     }
+
+
+
+    /* .......................................................................................... */
+
+
+    /* ..........................media query .................................... */
+
+
+    @media (min-width:300px) and (max-width:850px) {
+
+
+        body {
+            background-image: url(https://i.ibb.co/52d2K9t/bgc.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: #0284c7;
+        }
+
+        main {
+            /* border: solid red; */
+            flex-direction: column;
+
+        }
+
+        .right-box>h1 {
+            /* border: solid firebrick; */
+            font-size: 3rem;
+        }
+
+
+        .side-nav {
+            /* border: solid darkblue; */
+            border-right: 0;
+            padding: 0.90rem;
+            border-bottom: 9px solid;
+
+        }
+
+        ul {
+            border: none;
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+            padding: 0;
+        }
+
+        ul>li {
+            /* border: solid red; */
+            margin: 0;
+            font-size: 20px;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .left {
+            flex-basis: 100%;
+            margin-top: 100px;
+
+        }
+
+        button {
+            margin-top: 2rem;
+        }
+
+        .right-box {
+            /* border: solid gray; */
+            height: 350vh;
+        }
+
+        .container {
+            /* border: solid red; */
+            grid-template-columns: repeat(1, 1fr);
+            gap: 25px;
+
+        }
+
+        .items {
+            background-color: #f1f5f9;
+            border-radius: 10px;
+            height: 25rem;
+            width: 100%;
+            transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+        }
+
+        .wrap {
+            /* border: solid firebrick; */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .wrap a {
+            /* border: solid forestgreen; */
+            font-size: 1.1rem;
+
+        }
+
+
+
+
+
+    }
+
+
+    @media (min-width:851px) and (max-width:1450px) {
+
+
+        body {
+            background-image: url(https://i.ibb.co/52d2K9t/bgc.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: #0284c7;
+        }
+
+        main {
+            /* border: solid red; */
+            flex-direction: column;
+
+        }
+
+
+        .right-box>h1 {
+            /* border: solid firebrick; */
+            font-size: 2.4rem;
+        }
+
+
+        .side-nav {
+            /* border: solid darkblue; */
+            border-right: 0;
+            /* padding: 0; */
+            padding: 0.90rem;
+            border-bottom: 9px solid;
+
+        }
+
+        ul {
+            border: none;
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+            /* align-items: center; */
+            padding: 0;
+        }
+
+        ul>li {
+            /* border: solid red; */
+            margin: 0;
+            font-size: 20px;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .left {
+            flex-basis: 100%;
+            margin-top: 100px;
+
+        }
+
+        .first {
+            /* border: solid rebeccapurple; */
+            width: 100%;
+        }
+
+        button {
+            margin-top: 2rem;
+        }
+
+        .right-box {
+            border: solid red;
+            height: 150vh;
+        }
+
+        .container {
+            border: solid red;
+            /* display: grid; */
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+
+        }
+
+        .items {
+            background-color: #f1f5f9;
+            border-radius: 10px;
+            height: 20rem;
+            transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+        }
+
+    }
 </style>
+
 
 <body>
     <main>
