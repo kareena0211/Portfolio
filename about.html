@@ -5,408 +5,361 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-    <title>About Page</title>
-</head>
-
-<style>
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
-    }
-
-    body {
-        background-image: url(https://t4.ftcdn.net/jpg/04/06/71/57/360_F_406715739_JL5GFRheckkSSIIAJPUlwDEVAEjm3UoC.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    main {
-        /* border: 2px solid red; */
-        height: 100vh;
-        width: 100%;
-        display: flex;
-    }
+    <title>About Page </title>
 
 
-    /* .......................... SIDE NAV STYLING  ........................................       */
-
-
-    .side-nav {
-        border-right: 9px solid black;
-        flex-basis: 15%;
-        padding: 2rem;
-    }
-
-    .side-nav>h1 {
-        font-size: 2rem;
-        letter-spacing: 0.62rem;
-    }
-
-    ul {
-        border-top: 9px solid #000;
-        padding: 4rem 1rem 1rem 1rem;
-        text-align: center;
-        font-weight: 500;
-
-    }
-
-    ul>li {
-        list-style: none;
-        font-size: 1.4rem;
-        margin: 20px;
-        background-color: yellow;
-        padding: 1rem;
-    }
-
-    li>a {
-        text-decoration: none;
-        color: black;
-    }
-
-    ul>li:hover {
-        border-left: 5px solid #000;
-        border-right: 5px solid #000;
-        cursor: pointer;
-    }
-
-
-    .main-container {
-        padding: 0 4rem 0 4rem;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .left {
-        /* border: solid rebeccapurple; */
-        flex-basis: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 40rem;
-    }
-
-
-    .left>.first {
-        color: orange;
-        font-size: 1.5rem;
-    }
-
-    .left>h1 {
-        font-size: 2.5rem;
-        letter-spacing: 0.25rem;
-    }
-
-    .left .second {
-        font-size: 1.1rem;
-        font-weight: 500;
-    }
-
-    button {
-        border: none;
-        margin-top: 5rem;
-    }
-
-    button>a {
-        border: none;
-        /* background-color: transparent; */
-        text-decoration: none;
-        background-color: yellow;
-        color: black;
-        font-size: 1.2rem;
-        padding: 1rem;
-        border-radius: 5px;
-        font-weight: bold;
-    }
-
-    button>a:hover {
-        font-size: 1.3rem;
-        cursor: pointer;
-    }
-
-    .right {
-        /* border: solid saddlebrown; */
-        flex-basis: 50%;
-    }
-
-    .container {
-        /* border: solid wheat; */
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        text-align: center;
-    }
-
-    h2 {
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 3rem;
-    }
-
-
-    .items>img {
-        border: 4PX SOLID black;
-        height: 8REM;
-        border-radius: 50%;
-        padding: 6PX;
-    }
-
-    .items>p {
-        padding: 10px;
-        font-size: 1.1rem;
-        font-weight: 500;
-    }
-
-    .end {
-        grid-column: span 2;
-    }
-
-    .end>img {
-        border: 4PX SOLID black;
-    }
-
-
-    /* ..........................media query .................................... */
-
-
-    @media (min-width:414px) and (max-width:449px) {
-
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
 
         body {
-            background-image: url(https://i.ibb.co/52d2K9t/bgc.jpg);
-            background-size: cover;
+            background-image: url(https://t4.ftcdn.net/jpg/04/06/71/57/360_F_406715739_JL5GFRheckkSSIIAJPUlwDEVAEjm3UoC.jpg);
             background-repeat: no-repeat;
-            /* height: 100vh; */
-            background-color: #0284c7;
-        }
-
-        main {
-            /* border: solid red; */
-            flex-direction: column;
-
-        }
-
-
-        .right {
-            display: none;
-        }
-
-
-        .side-nav {
-            /* border: solid darkblue; */
-            border-right: 0;
-            /* padding: 0; */
-            padding: 0.90rem;
-            border-bottom: 9px solid;
-
-        }
-
-        ul {
-            border: none;
-            /* background-color: teal;
-    height: 5rem; */
-            display: flex;
-            justify-content: space-between;
-            gap: 10px;
-            /* align-items: center; */
-            padding: 0;
-        }
-
-        ul>li {
-            /* border: solid red; */
-            margin: 0;
-            font-size: 20px;
-            border-radius: 5px;
-            padding: 5px;
-        }
-
-        .left {
-            flex-basis: 100%;
-            /* width: auto; */
-            /* justify-content: flex-start; */
-            margin-top: 100px;
-
-        }
-
-        .first {
-            /* border: solid rebeccapurple; */
-            width: 100%;
-            /* text-align: left; */
-        }
-
-        button {
-            margin-top: 2rem;
-        }
-    }
-
-
-    @media (min-width:450px) and (max-width:799px) {
-
-
-        body {
-            background-image: url(https://i.ibb.co/52d2K9t/bgc.jpg);
             background-size: cover;
-            background-repeat: no-repeat;
-            /* height: 100vh; */
-            /* background-color: #0284c7; */
         }
-
-        main {
-            flex-direction: column;
-
-        }
-
-
-        .right {
-            display: none;
-        }
-
-
-        .side-nav {
-            border-right: 0;
-            border-bottom: 9px solid;
-
-        }
-
-        ul {
-            border: none;
-            /* background-color: teal;
-            height: 5rem; */
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            padding: 0;
-        }
-
-        ul>li {
-            /* border: solid red; */
-            margin: 0;
-            border-radius: 5px;
-            padding: 5px;
-        }
-
-        .left {
-            flex-basis: 100%;
-            width: auto;
-            justify-content: flex-start;
-            margin-top: 100px;
-
-        }
-
-        button {
-            margin-top: 2rem;
-        }
-    }
-
-
-    @media (min-width:800px) and (max-width:1300px) {
 
 
 
         .main-container {
-            padding: 0 4rem 0 4rem;
             height: 100vh;
-            display: block;
-
+            display: flex;
+            width: 100%;
         }
 
-        .left .second {
-            font-size: 1rem;
-            font-weight: 500;
+        /* ------- SIDENAV - STYLING--------  */
+
+        .left-case {
+            flex-basis: 20%;
+            /* border: solid green; */
+            padding: 20px;
+            border-right: 8px solid;
+        }
+
+        .side-nav>h1 {
             text-align: center;
+            font-size: 2.5rem;
+            letter-spacing: 0.62rem;
         }
 
-        button {
-            margin: 50px;
+        .nav-box {
+            text-align: center;
+            padding: 1rem;
+            border-top: 6px solid;
+
         }
 
-
-        .right {
-            display: none;
+        .nav-box>a {
+            text-decoration: none;
+            font-size: 1.3rem;
+            color: #000;
+            font-weight: 500;
         }
 
+        .nav-box>a>li {
+            list-style: none;
+            padding: 1rem;
+            margin: 1.4rem;
+            background-color: yellow;
+
+        }
+
+        .nav-box>a>li:hover {
+            border-inline: 5px solid #000;
+        }
+
+        /*-------------  RIGHT CASE STYLING ----------- */
+        .right-case {
+            flex-basis: 80%;
+            /* border: solid saddlebrown; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .about {
+            /* border: solid teal; */
+            flex-basis: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .about-content {
+            height: 100%;
+            /* border: solid; */
+            text-align: center;
+            padding: 10px;
+        }
+
+        .about-heading,
+        .language-heading {
+            font-size: 2rem;
+            margin-block: 1.5rem;
+        }
+
+        .about-para {
+            font-size: 1.2rem;
+            line-height: 2rem;
+        }
+
+        .about-button {
+            padding: 10px;
+            border: none;
+            background-color: orangered;
+            color: #fff;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            margin-top: 3rem;
+        }
+
+        .about-button:hover {
+            border-inline: 5px solid #000;
+        }
+
+        .about-language {
+            /* border: solid red; */
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 80%;
+        }
+
+        .grid-box {
+            /* border: solid teal; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .grid-box p {
+            font-weight: bold;
+            font-size: 1.3rem;
+
+        }
+
+        .lang-logo {
+            border: 4px solid #000;
+            width: 150px;
+            border-radius: 50%;
+            padding: 10px;
+
+        }
+
+        .grid-box:nth-child(5) {
+            grid-column: span 2;
+        }
+
+        /* -----------------    MEDIA QUERY ---------------- */
+        @media (min-width : 951px)and (max-width: 1250px) {
+
+            body {
+                background-image: url(https://i.ibb.co/52d2K9t/bgc.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-color: #0284c7;
+            }
+
+            .main-container {
+                flex-direction: column;
+            }
+
+            .left-case {
+                border-right: none;
+                border-bottom: 10px solid #000;
+            }
+
+            .nav-box {
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .nav-box>a>li {
+                padding: 10px;
+                margin: 10px;
+                font-weight: normal;
+
+            }
+
+            .about {
+                height: 100%;
+            }
+
+            .about-para {
+                font-size: 1.4rem;
+                line-height: 2.3rem;
+            }
 
 
-    }
-</style>
+        }
+
+        @media (min-width : 300px) and (max-width :950px) {
+
+            body {
+                background-image: url(https://i.ibb.co/52d2K9t/bgc.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-color: #0284c7;
+            }
+
+            .main-container {
+                flex-direction: column;
+            }
+
+            .left-case {
+                border-right: none;
+                border-bottom: 10px solid #000;
+            }
+
+            .nav-box {
+                padding: 0;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                align-items: center;
+                border: none;
+                /* background-color: #fff; */
+            }
+
+            .nav-box>a>li {
+                margin: 0;
+                padding: 6px;
+                font-weight: normal;
+                font-size: 18px;
+                border-inline: 2px solid;
+            }
+
+            .right-case {
+                flex-direction: column;
+            }
+
+            .right-content-box {
+                border-bottom: 10px solid #000;
+            }
+
+            .about-para {
+                font-size: 1rem;
+                line-height: normal;
+            }
+
+            .about-left-box {
+                width: 100%;
+                /* background-color: #fff; */
+            }
+
+            .about-language {
+                /* border: solid red; */
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                width: 70%;
+            }
+
+            .lang-logo {
+                width: 100px;
+            }
+
+
+        }
+    </style>
+</head>
 
 <body>
-
-    <!-- ..............  navbar ...................................... -->
-    <main>
-        <aside class="side-nav">
+    <div class="main-container">
+        <aside class="left-case side-nav">
             <h1>PORTFOLIO</h1>
-            <ul>
-                <li> <a href="./index.html"> Home</a></li>
-                <li> <a href="./about.html"> About</a></li>
-                <li> <a href="./projects.html">Projects</a> </li>
-                <li> <a href="./contact.html">Contact</a></li>
+            <ul class="nav-box">
+                <a href="./index.html">
+                    <li>Home</li>
+                </a>
+                <a href="./about.html">
+                    <li>About</li>
+                </a>
+                <a href="./projects.html">
+                    <li>Projects</li>
+                </a>
+                <a href="./contact.html">
+                    <li>Contact</li>
+                </a>
             </ul>
         </aside>
 
-        <div class="main-container">
 
-            <div class="left">
-                <p class="first">Hello, Welcome</p>
-                <h1>I m Kareena</h1>
-                <p class="second">👋 Hello, I'm Kareena, a dedicated Frontend Developer passionate about crafting
-                    engaging
-                    digital
-                    experiences. Currently enrolled at Navgurukul, I've brought my skills to life through numerous
-                    projects
-                    using HTML, CSS, JavaScript, and React.js. My journey started with CBSE schooling in Delhi, followed
-                    by
-                    a Bachelor's in Commerce from Delhi University. As I delve deeper into React.js, I'm excited about
-                    its
-                    potential for building responsive and dynamic web applications. I thrive in translating design
-                    concepts
-                    into code and solving challenges with a logical approach. Let's connect and turn your ideas into
-                    exceptional digital solutions! 🌟</p>
-                <button> <a href="./contact.html"> Connect Me</a></button>
-            </div>
+        <main class="right-case">
+            <article class="about right-content-box">
+                <div class="about-content">
+                    <h1 class="about-heading"><span style="color: orangered;">Hello Welcome</span> I'm Kareena</h1>
+                    <p class="about-para">
+                        Hello,👋 I'm Kareena, a dedicated Frontend Developer passionate about crafting
+                        engaging
+                        digital
+                        experiences. Currently enrolled at Navgurukul, I've brought my skills to life through numerous
+                        projects
+                        using HTML, CSS, JavaScript, and React.js. My journey started with CBSE schooling in Delhi,
+                        followed
+                        by
+                        a Bachelor's in Commerce from Delhi University. As I delve deeper into React.js, I'm excited
+                        about
+                        its
+                        potential for building responsive and dynamic web applications. I thrive in translating design
+                        concepts
+                        into code and solving challenges with a logical approach. Let's connect and turn your ideas into
+                        exceptional digital solutions! 🌟
+                    </p>
+                    <button class="about-button">Connect with me</button>
+                </div>
+            </article>
 
-            <div class="right">
+            <!-- LANGUAGE LOGO IMAGE -->
 
-                <h2>Language Known</h2>
-
-
-                <div class="container">
-
-                    <div class="items"> <img src="https://i.ibb.co/mq73K13/html.webp" alt="">
+            <article class="about about-left-box">
+                <h1 class="language-heading">LANGUAGE KNOWN</h1>
+                <div class="about-language">
+                    <div class="grid-box">
+                        <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png" alt="html"
+                            class="lang-logo">
                         <p>HTML</p>
                     </div>
-                    <div class="items"> <img
-                            src="https://i.ibb.co/GxWjMLL/png-transparent-green-circle-css3-logo-organization-ethiopia-html5-rabbit-inc-text-thumbnail.png"
-                            alt="">
+
+                    <div class="grid-box">
+                        <img src="https://i.ibb.co/GxWjMLL/png-transparent-green-circle-css3-logo-organization-ethiopia-html5-rabbit-inc-text-thumbnail.png"
+                            alt="css" class="lang-logo">
                         <p>CSS</p>
                     </div>
-                    <div class="items"> <img src="https://i.ibb.co/qyhs7D5/js.jpg" alt="">
-                        <p>JavaScript</p>
+
+                    <div class="grid-box">
+                        <img src="https://i.ibb.co/qyhs7D5/js.jpg" alt="JavaScript" class="lang-logo">
+                        <p>JAVASCRIPT</p>
                     </div>
-                    <div class="items"> <img src="https://i.ibb.co/FwH2CRj/react.png" alt="">
-                        <p>React</p>
+                    <div class="grid-box">
+                        <img src="https://i.ibb.co/FwH2CRj/react.png" alt="React" class="lang-logo">
+                        <p>REACT</p>
                     </div>
-                    <div class="items end"> <img src="https://i.ibb.co/Yprtr5p/2874-download-5-jpeg-L.jpg" alt="">
-                        <p>Python</p>
+                    <div class="grid-box">
+                        <img src="https://i.ibb.co/Yprtr5p/2874-download-5-jpeg-L.jpg" alt="python" class="lang-logo last
+                    ">
+                        <p>PYTHON</p>
                     </div>
+
+
 
                 </div>
-
-            </div>
-        </div>
-
-    </main>
+            </article>
 
 
+        </main>
+    </div>
 </body>
 
 </html>
